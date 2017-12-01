@@ -1,23 +1,37 @@
 # Building Angular with Bazel
 
+> 用Bazel构建Angular
+
 Note: this doc is for developing Angular, it is _not_ public
 documentation for building an Angular application with Bazel.
+
+> 请注意:这个是开发Angular的文档，不是一个使用Bazel来构建Angular应用的公共文档。
 
 The Bazel build tool (http://bazel.build) provides fast, reliable
 incremental builds. We plan to migrate Angular's build scripts to
 Bazel.
 
+> Bazel构建工具提供了一个快速的，可靠的增量构建方式，我们计划用Bazel迁移Angular的构建脚本。
+
 ## Installation
+
+> 安装
 
 Install Bazel from the distribution, see [install] instructions.
 On Mac, just `brew install bazel`.
 
+> 安装Bazel,请看 [install] 指令介绍，在Mac平台下，执行brew install bazel即可安装。
+
 Bazel will install a hermetic version of Node, npm, and Yarn when
 you run the first build.
+
+> Bazel将会在你第一次build的时候安装一个由Node,npm,yarn组成的hermetic version（密封的版本？）。
 
 [install]: https://bazel.build/versions/master/docs/install.html
 
 ## Configuration
+
+> 配置
 
 The `WORKSPACE` file indicates that our root directory is a
 Bazel project. It contains the version of the Bazel rules we
